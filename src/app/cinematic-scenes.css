@@ -1,0 +1,673 @@
+/* Shared chapter rhythm across the portfolio. */
+.owner-portrait {
+  width: 100%;
+  max-width: 520px;
+}
+.owner-portrait figure {
+  margin: 0;
+}
+.owner-portrait-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border-radius: 160px 160px 20px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 60px #292e251a;
+}
+.owner-portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+  transition: transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.owner-portrait-frame:hover .owner-portrait-image {
+  transform: scale(1.035);
+}
+.portrait-note {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  padding: 10px 14px;
+  border: 1px solid #ffffff30;
+  border-radius: 30px;
+  background: #152721db;
+  color: #fff8ec;
+  font-size: 9px;
+  letter-spacing: 1.4px;
+}
+.owner-portrait figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 4px;
+}
+.owner-portrait figcaption strong {
+  display: block;
+  font-size: 18px;
+}
+.owner-portrait figcaption div > span {
+  display: block;
+  color: var(--soft-ink);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.portrait-signature {
+  font:
+    italic 30px Georgia,
+    serif;
+  color: var(--accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .owner-portrait-image {
+    transition: none;
+  }
+  .owner-portrait-frame:hover .owner-portrait-image {
+    transform: none;
+  }
+}
+.chapter-world {
+  --ui-accent: var(--accent);
+  --ui-accent-ink: var(--accent-ink);
+  --ui-glass: var(--surface);
+  --ui-glass-border: var(--line);
+}
+.scroll-home .section {
+  padding-block: clamp(80px, 8vw, 128px);
+}
+.scroll-home .section-heading {
+  margin-bottom: 48px;
+}
+.scroll-home .chapter-world-projects .project-card {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--surface);
+}
+@media (max-width: 767px) {
+  .scroll-home .section {
+    padding-block: 72px;
+  }
+  .scroll-home .section-heading {
+    margin-bottom: 32px;
+  }
+}
+
+/* Each chapter carries its palette into its full content. */
+.scroll-home .scroll-stage {
+  background-image: none;
+}
+.hero-scene-glow {
+  position: absolute;
+  inset: -25%;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 70% 45%, #c8aa7840, transparent 50%);
+}
+:root[data-theme='light'] .scroll-home .scroll-stage {
+  background-color: #e8ddd0 !important;
+}
+.chapter-world {
+  position: relative;
+  isolation: isolate;
+  background: var(--canvas);
+  color: var(--ink);
+  --scene-wash: #eec19e;
+}
+.chapter-world-about,
+.chapter-world-paper {
+  --previous-scene: #10110f;
+  --canvas: #e8dfd1;
+  --surface: #dbd1c1;
+  --surface-raised: #f4eee4;
+  --ink: #302219;
+  --soft-ink: #574033;
+  --quiet: #665044;
+  --line: #30221930;
+  --accent: #8b351c;
+  --accent-ink: #fff7eb;
+  --field: #f8ddc5;
+  --scene-wash: #fff1d5;
+  color-scheme: light;
+}
+.chapter-world-projects {
+  --previous-scene: #e8dfd1;
+  --canvas: #243c38;
+  --surface: #1c302d;
+  --surface-raised: #334d45;
+  --ink: #f2eee5;
+  --soft-ink: #ccd6cc;
+  --quiet: #b4c3b9;
+  --line: #c8d5c545;
+  --accent: #e9c49a;
+  --accent-ink: #292217;
+  --field: #192c29;
+  --scene-wash: #49665a;
+  color-scheme: dark;
+}
+.chapter-world-skills {
+  --previous-scene: #243c38;
+  --canvas: #d6dfd2;
+  --surface: #c6d2c1;
+  --surface-raised: #e8eee3;
+  --ink: #193a31;
+  --soft-ink: #36564b;
+  --quiet: #426456;
+  --line: #193a3135;
+  --accent: #235e49;
+  --accent-ink: #f0fff7;
+  --field: #e0f2e7;
+  --scene-wash: #e8eee3;
+  color-scheme: light;
+}
+.chapter-world-contact {
+  --previous-scene: #eae5dc;
+  --canvas: #ddd2bf;
+  --surface: #cec1ab;
+  --surface-raised: #f1e9dc;
+  --ink: #292e25;
+  --soft-ink: #4c5346;
+  --quiet: #59604f;
+  --line: #292e2535;
+  --accent: #365345;
+  --accent-ink: #faf7ef;
+  --field: #f1e9dc;
+  --scene-wash: #f1e9dc;
+  color-scheme: light;
+}
+.chapter-world-paper {
+  --canvas: #eae5dc;
+  --surface: #ded9ce;
+  --surface-raised: #f5f1e9;
+  --scene-wash: #f8eedf;
+}
+.scroll-home > .portfolio-journey .journey-backdrop {
+  display: none;
+}
+.chapter-overture {
+  position: relative;
+  height: 140svh;
+  background: var(--previous-scene, #10110f);
+}
+.overture-stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  min-height: 600px;
+  overflow: clip;
+  isolation: isolate;
+  background: var(--canvas);
+}
+.overture-wash {
+  position: absolute;
+  top: -40%;
+  width: 110vw;
+  height: 160%;
+  translate: -50% 0;
+  background: radial-gradient(ellipse, var(--scene-wash), transparent 65%);
+  opacity: 0.75;
+  pointer-events: none;
+}
+.overture-grid {
+  position: absolute;
+  inset: 0 6.5%;
+  border-inline: 1px solid var(--line);
+  background: linear-gradient(
+    90deg,
+    transparent calc(50% - 0.5px),
+    var(--line) 50%,
+    transparent calc(50% + 0.5px)
+  );
+  opacity: 0.65;
+  pointer-events: none;
+}
+.overture-topline,
+.overture-bottom {
+  position: absolute;
+  inset: 115px 7% auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font:
+    10px 'Courier New',
+    monospace;
+  letter-spacing: 1.5px;
+  z-index: 3;
+}
+.overture-topline > span:first-child::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 14px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.overture-bottom {
+  inset: auto 7% 40px;
+  font-size: 9px;
+}
+.overture-bottom > div {
+  width: min(32vw, 420px);
+  height: 1px;
+  background: var(--line);
+}
+.overture-bottom i {
+  display: block;
+  height: 2px;
+  background: var(--ink);
+  transform-origin: left;
+}
+.overture-copy {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 145px 7% 100px;
+  pointer-events: none;
+}
+.overture-copy h2 {
+  font-size: clamp(64px, 8.5vw, 146px);
+  font-weight: 500;
+  line-height: 0.97;
+  letter-spacing: -0.075em;
+  max-width: 1050px;
+}
+.overture-copy h2 > span,
+.overture-copy h2 > em {
+  display: block;
+  width: fit-content;
+}
+.overture-copy h2 > em {
+  margin-left: 7vw;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.065em;
+}
+.overture-copy p {
+  max-width: 355px;
+  margin-top: 40px;
+  color: var(--soft-ink);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.overture-copy a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  width: fit-content;
+  margin-top: 22px;
+  padding-block: 12px;
+  border-bottom: 1px solid currentColor;
+  font-size: 12px;
+  pointer-events: auto;
+}
+.overture-copy:focus-within {
+  opacity: 1 !important;
+}
+.overture-copy a:hover svg {
+  transform: translate(3px, 3px);
+}
+.overture-copy a svg {
+  transition: transform 0.2s;
+}
+.overture-watermark {
+  position: absolute;
+  left: -5%;
+  bottom: -0.2em;
+  font-size: 32vw;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.09em;
+  opacity: 0.07;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.overture-art {
+  position: absolute;
+  z-index: 1;
+  top: 24%;
+  right: 7%;
+  width: 39vw;
+  height: 39vw;
+  max-height: 70vh;
+  pointer-events: none;
+}
+.overture-sculpture {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  perspective: 800px;
+}
+.overture-sculpture i {
+  position: absolute;
+  inset: 8%;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  transform: rotateY(25deg) rotateX(30deg);
+  box-shadow:
+    inset 8px 0 18px #fff3,
+    4px 0 0 #30221910;
+}
+.overture-sculpture i:nth-child(2) {
+  transform: rotateY(50deg) rotateX(30deg);
+}
+.overture-sculpture i:nth-child(3) {
+  transform: rotateY(75deg) rotateX(30deg);
+}
+.overture-sculpture i:nth-child(4) {
+  transform: rotateY(100deg) rotateX(30deg);
+}
+.overture-sculpture i:nth-child(5) {
+  transform: rotateY(125deg) rotateX(30deg);
+}
+.overture-sculpture i:nth-child(6) {
+  transform: rotateY(150deg) rotateX(30deg);
+}
+.overture-sculpture span {
+  width: 135px;
+  height: 135px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--canvas);
+  background: var(--ink);
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.1;
+}
+.overture-art-projects {
+  top: 30%;
+  right: 3%;
+  width: 45vw;
+  height: auto;
+  perspective: 1200px;
+}
+.overture-browser {
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #ffffff55;
+  background: #11162b;
+  box-shadow: 0 45px 100px #00134a77;
+  transform: rotateY(-15deg) rotateX(8deg);
+}
+.overture-browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px;
+  color: #e5e9ff;
+}
+.overture-browser-bar i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #7880a2;
+}
+.overture-browser-bar span {
+  margin-left: auto;
+  font:
+    8px 'Courier New',
+    monospace;
+  letter-spacing: 1px;
+}
+.overture-browser img {
+  display: block;
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+  object-position: top;
+}
+.overture-tool-orbit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.overture-tool-orbit::before {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  border: 1px dashed var(--ink);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+.overture-tool-orbit b {
+  font-size: 9vw;
+  font-weight: 400;
+  letter-spacing: -0.1em;
+}
+.overture-tool-orbit span {
+  position: absolute;
+  padding: 18px 24px;
+  border: 1px solid var(--ink);
+  border-radius: 100px;
+  background: var(--canvas);
+  font-size: 15px;
+  box-shadow: 6px 6px 0 #193a3114;
+}
+.overture-tool-orbit span:nth-child(1) {
+  top: -4%;
+  left: 30%;
+}
+.overture-tool-orbit span:nth-child(2) {
+  top: 40%;
+  right: -10%;
+}
+.overture-tool-orbit span:nth-child(3) {
+  bottom: -4%;
+  left: 30%;
+}
+.overture-tool-orbit span:nth-child(4) {
+  top: 40%;
+  left: -15%;
+}
+.overture-arrow {
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+  filter: drop-shadow(20px 20px 0 #64378a18);
+}
+/* The palettes continue through real content, rather than ending at a title card. */
+.chapter-world .full-page-chapter[data-enhanced='true'] .scroll-chapter-content,
+.chapter-world .scroll-chapter-content {
+  background: var(--canvas);
+  box-shadow: none;
+  border-top: 1px solid var(--line);
+}
+.chapter-world .full-page-chapter {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.chapter-world
+  .full-page-chapter[data-enhanced='true']
+  > .scroll-chapter-stage {
+  position: relative;
+  top: auto;
+}
+.chapter-world
+  .full-page-chapter[data-enhanced='true']
+  .scroll-chapter-content {
+  opacity: 1;
+  transform: none;
+}
+.chapter-world [data-scroll-scene] {
+  color: var(--ink);
+}
+.chapter-world .section-heading h2 {
+  font-size: clamp(42px, 5.7vw, 82px);
+}
+.chapter-world .principle-card,
+.chapter-world .skill-card,
+.chapter-world .education-card,
+.chapter-world .timeline,
+.chapter-world .contact-form {
+  box-shadow: none;
+  border-color: var(--line);
+}
+.chapter-world-projects .project-card {
+  border-radius: 0;
+  border-width: 1px 0 0;
+  background: var(--canvas);
+  box-shadow: none;
+  padding-inline: 0;
+}
+.chapter-world-projects .project-card-index > span:first-child {
+  font-size: 65px;
+}
+.chapter-world-projects .project-cover-link {
+  border-radius: 6px;
+}
+.chapter-world-projects .project-card h3 {
+  font-size: clamp(28px, 3.5vw, 52px);
+}
+.chapter-world-projects .project-card-body > p {
+  font-size: 14px;
+}
+@media (min-width: 1024px) and (min-height: 740px) {
+  .chapter-world-projects .project-card {
+    min-height: calc(100svh - 180px);
+  }
+  .chapter-world-projects .project-grid {
+    gap: 12svh;
+  }
+}
+.chapter-world-skills .skill-card {
+  border-radius: 0;
+  border-width: 0 0 1px;
+  background: transparent;
+}
+.chapter-world-skills .skill-grid {
+  gap: 0 30px;
+}
+.chapter-world .contact-form input,
+.chapter-world .contact-form textarea {
+  color: var(--ink);
+  background: var(--field);
+}
+.scroll-home .journey-interlude {
+  background: #171e19;
+  color: #e2ebd4;
+  --accent: #c4e892;
+  --soft-ink: #bcc8b2;
+}
+@media (max-width: 767px) {
+  .chapter-overture {
+    height: 125svh;
+  }
+  .overture-stage {
+    min-height: 620px;
+  }
+  .overture-topline {
+    inset: 98px 7% auto;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+  .overture-topline > span:last-child {
+    display: none;
+  }
+  .overture-copy {
+    justify-content: flex-start;
+    padding-top: 180px;
+  }
+  .overture-copy h2 {
+    font-size: clamp(43px, 10.5vw, 80px);
+  }
+  .overture-copy h2 > em {
+    margin-left: 0;
+  }
+  .overture-copy p {
+    max-width: 270px;
+    font-size: 12px;
+    margin-top: 28px;
+  }
+  .overture-copy a {
+    font-size: 11px;
+    margin-top: 12px;
+  }
+  .overture-art {
+    width: 65vw;
+    height: 65vw;
+    top: auto;
+    bottom: 9%;
+    right: -5%;
+    opacity: 0.6;
+  }
+  .overture-art-projects {
+    width: 65vw;
+    height: auto;
+    right: 3%;
+    bottom: 8%;
+    opacity: 0.8;
+  }
+  .overture-browser img {
+    height: 40vw;
+  }
+  .overture-sculpture span {
+    width: 85px;
+    height: 85px;
+    font-size: 19px;
+  }
+  .overture-tool-orbit span {
+    padding: 10px 14px;
+    font-size: 11px;
+  }
+  .overture-tool-orbit b {
+    font-size: 18vw;
+  }
+  .overture-watermark {
+    bottom: 10%;
+  }
+  .overture-bottom {
+    bottom: 30px;
+    font-size: 7px;
+    gap: 12px;
+  }
+  .chapter-world .section-heading h2 {
+    font-size: 10vw;
+  }
+}
+@media (max-height: 700px) and (min-width: 768px) {
+  .overture-stage {
+    min-height: 500px;
+  }
+  .overture-copy h2 {
+    font-size: 7vw;
+  }
+  .overture-copy p {
+    margin-top: 22px;
+  }
+  .overture-topline {
+    top: 90px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .chapter-overture {
+    height: auto;
+  }
+  .overture-stage {
+    position: relative;
+    clip-path: none !important;
+  }
+  .overture-copy,
+  .overture-art,
+  .overture-watermark,
+  .overture-copy h2 > * {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .overture-watermark {
+    opacity: 0.07 !important;
+  }
+}

@@ -1,0 +1,24 @@
+Wireframe figure: adapted from the Mixamo X Bot sample distributed by Three.js.
+Source: https://github.com/mrdoob/three.js/blob/dev/examples/models/gltf/Xbot.glb
+Character usage: https://helpx.adobe.com/creative-cloud/faq/mixamo-faq.html
+
+Changes: materials removed; arms posed, vertices normalized and jittered,
+and edges sampled into a lightweight line illustration for this portfolio.
+
+Journey illustrations
+---------------------
+radio.bin / radio.svg: adapted from BoomBox, Microsoft (2017), CC0 1.0.
+Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/BoomBox
+License: https://creativecommons.org/publicdomain/zero/1.0/
+
+aviator.bin / aviator.svg: adapted from FlightHelmet, public (2018),
+conversion from Maya by Gary Hsu, CC0 1.0.
+Source: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/FlightHelmet
+License: https://creativecommons.org/publicdomain/zero/1.0/
+
+Changes to the two models: textures and materials removed, geometry normalized,
+edges sampled, and projected as line illustrations. No source textures are shipped.
+
+knot, laptop, gears, book, network, pen, paper-plane:
+Original procedural line sculptures created for this portfolio.
+Regenerate all journey assets with scripts/prepare-journey-art.mjs.
