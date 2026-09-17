@@ -35,3 +35,6 @@ next-env.d.ts
 test-results/
 .artwork-sources/
 playwright-report/
+
+# Local Netlify folder
+.netlify
