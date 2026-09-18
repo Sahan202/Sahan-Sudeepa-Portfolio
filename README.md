@@ -1,6 +1,10 @@
 ﻿# Sahan Sudeepa — Personal Portfolio
 
-A responsive Next.js App Router portfolio with TypeScript, Tailwind CSS v4, Framer Motion, Lucide icons and locally hosted Manrope typography. The default charcoal / amber theme and the warm light theme share an intentional design system.
+A responsive Next.js App Router portfolio with TypeScript, Tailwind CSS v4, Framer Motion, Lucide icons and locally hosted Manrope typography. It uses a navy-blue palette with layered glass surfaces.
+
+## Live site
+
+[https://portfolio-next.sahansudeepa-portfolio.workers.dev](https://portfolio-next.sahansudeepa-portfolio.workers.dev)
 
 ## Run
 
