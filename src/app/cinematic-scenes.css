@@ -1,4 +1,4 @@
-/* Shared chapter rhythm across the portfolio. */
+﻿/* Shared chapter rhythm across the portfolio. */
 .owner-portrait {
   width: 100%;
   max-width: 520px;
@@ -116,70 +116,70 @@
 }
 .chapter-world-about,
 .chapter-world-paper {
-  --previous-scene: #10110f;
-  --canvas: #e8dfd1;
-  --surface: #dbd1c1;
-  --surface-raised: #f4eee4;
-  --ink: #302219;
-  --soft-ink: #574033;
-  --quiet: #665044;
-  --line: #30221930;
-  --accent: #8b351c;
-  --accent-ink: #fff7eb;
-  --field: #f8ddc5;
-  --scene-wash: #fff1d5;
+  --previous-scene: #071226;
+  --canvas: #e8f3ff;
+  --surface: #d9eafe;
+  --surface-raised: #f8fbff;
+  --ink: #0c2140;
+  --soft-ink: #3b5878;
+  --quiet: #55718e;
+  --line: #19436b2e;
+  --accent: #0879d1;
+  --accent-ink: #f6fbff;
+  --field: #eef7ff;
+  --scene-wash: #b9ddff;
   color-scheme: light;
 }
 .chapter-world-projects {
-  --previous-scene: #e8dfd1;
-  --canvas: #243c38;
-  --surface: #1c302d;
-  --surface-raised: #334d45;
-  --ink: #f2eee5;
-  --soft-ink: #ccd6cc;
-  --quiet: #b4c3b9;
-  --line: #c8d5c545;
-  --accent: #e9c49a;
-  --accent-ink: #292217;
-  --field: #192c29;
-  --scene-wash: #49665a;
+  --previous-scene: #e8f3ff;
+  --canvas: #081a35;
+  --surface: #102748;
+  --surface-raised: #18375e;
+  --ink: #f3f8ff;
+  --soft-ink: #c0d1e6;
+  --quiet: #8fa8c5;
+  --line: #8fc7fb3d;
+  --accent: #4db8ff;
+  --accent-ink: #041526;
+  --field: #0b203f;
+  --scene-wash: #1f5a92;
   color-scheme: dark;
 }
 .chapter-world-skills {
-  --previous-scene: #243c38;
-  --canvas: #d6dfd2;
-  --surface: #c6d2c1;
-  --surface-raised: #e8eee3;
-  --ink: #193a31;
-  --soft-ink: #36564b;
-  --quiet: #426456;
-  --line: #193a3135;
-  --accent: #235e49;
-  --accent-ink: #f0fff7;
-  --field: #e0f2e7;
-  --scene-wash: #e8eee3;
+  --previous-scene: #081a35;
+  --canvas: #dcecff;
+  --surface: #cbdff6;
+  --surface-raised: #f3f9ff;
+  --ink: #102b4b;
+  --soft-ink: #365777;
+  --quiet: #4e7092;
+  --line: #17456f30;
+  --accent: #0879d1;
+  --accent-ink: #f4faff;
+  --field: #eaf5ff;
+  --scene-wash: #bddcff;
   color-scheme: light;
 }
 .chapter-world-contact {
-  --previous-scene: #eae5dc;
-  --canvas: #ddd2bf;
-  --surface: #cec1ab;
-  --surface-raised: #f1e9dc;
-  --ink: #292e25;
-  --soft-ink: #4c5346;
-  --quiet: #59604f;
-  --line: #292e2535;
-  --accent: #365345;
-  --accent-ink: #faf7ef;
-  --field: #f1e9dc;
-  --scene-wash: #f1e9dc;
+  --previous-scene: #dcecff;
+  --canvas: #e7f2ff;
+  --surface: #d7e8fa;
+  --surface-raised: #f8fbff;
+  --ink: #102946;
+  --soft-ink: #45617e;
+  --quiet: #5a7692;
+  --line: #17456f30;
+  --accent: #0879d1;
+  --accent-ink: #f6fbff;
+  --field: #f1f8ff;
+  --scene-wash: #c8e3ff;
   color-scheme: light;
 }
 .chapter-world-paper {
-  --canvas: #eae5dc;
-  --surface: #ded9ce;
-  --surface-raised: #f5f1e9;
-  --scene-wash: #f8eedf;
+  --canvas: #edf6ff;
+  --surface: #deecfa;
+  --surface-raised: #f9fcff;
+  --scene-wash: #d4e9ff;
 }
 .scroll-home > .portfolio-journey .journey-backdrop {
   display: none;
